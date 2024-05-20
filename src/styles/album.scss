@@ -1,0 +1,328 @@
+@use 'sass:math';
+@import 'index.scss';
+
+
+
+.content{
+    width:$content-width;
+    margin:20px auto;   
+    font-family: $text-font;
+    
+
+
+   
+
+
+    &__titles:not(#first-title){
+        border-bottom: 1px solid $dark-grey;
+        font-size: $txt-regular;
+        font-family: $menu-font;
+        
+    }
+    
+    #first-title{
+        font-size: $txt-regular;
+        font-family: $menu-font;
+    }
+    &__album{
+        display:flex;
+        justify-content: space-between;
+        border-bottom: 1px solid $dark-grey;
+
+        .album-nav{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap:10px;
+            font-family: $menu-font;
+            font-size: $txt-small;
+
+        
+
+            a:hover{
+               opacity: .5;
+            }
+        }
+
+      
+    
+    }
+
+
+        &__songs{
+
+          
+            span{
+                 margin-left: 5px;
+                 padding-top:5px;
+                 width:30px;
+                 height:25px;
+                 display: inline-flex;
+                 justify-content: center;
+                 align-items: center;
+                
+            }
+
+    li{
+        display:flex;
+       
+     
+    }
+
+            img{
+                width:25px;
+                margin:0 auto;
+               
+            }
+
+        }
+
+	
+        
+        
+
+
+    &__info{
+        display:flex;
+        margin:0 auto;
+        justify-content: center;
+        align-items: flex-start;
+        gap:1.2rem;
+        padding:30px 0;
+    }
+
+ 
+
+    #last-review{
+        border-bottom:none;
+    }
+    
+    
+    .reviews{
+        display:flex;
+        //justify-content: flex-start;
+        //align-items: flex-start;
+        gap:20px;
+        border-bottom: 1px solid $medium-grey;
+        
+        padding:12px;
+        
+    
+    
+        &__rating{
+          
+            width:100px;
+            display:flex;
+            flex-direction: column;
+            //justify-content: flex-end;
+            align-items: center;
+            //padding-block-start: 10px;;
+          
+    
+           
+        }
+    
+        &__rate{
+            font-size: $txt-big;
+            font-weight: 400;
+           
+        }
+        
+        &__bar{
+            background-color: $medium-grey;
+            width:80%;
+        }
+    
+        &__bar span{
+            display:block;
+            height:6px;
+        }
+    
+        .rate-1{ 
+            width:10%; 
+    
+            span{
+                background-color:$red;
+            }
+        }
+        .rate-2{ width:20%; 
+            span{
+                background-color: $red;
+            }
+        }
+        .rate-3{ width:30%; 
+            span{
+                background-color: $red;
+            }
+        }
+        .rate-4{ width:40%; 
+            span{
+                background-color: $red;
+            }
+        }
+        .rate-5{ width:50%; 
+            span{
+                background-color: $orange;
+            }
+        }
+        .rate-6{ width:60%; 
+            span{
+                background-color: $orange;
+            }
+        }
+        .rate-7{ width:70%; 
+            span{
+                background-color: $green;
+            }
+        }
+    
+        .rate-8{ width:80%; 
+            span{
+                background-color: $green;
+            }
+        }
+        .rate-9{ width:90%; 
+            span{
+                background-color: $green;
+            }
+        }
+        .rate-10{ width:100%; 
+            span{
+                background-color: $green;
+            }
+        }
+    
+    
+        &__content{
+            margin-block-start: 1em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap:20px;
+          
+        }
+    
+        &__header{
+            display:flex;
+            align-items: center;
+            gap:15px;
+    
+            img{
+                width:40px;
+            }
+        }
+    
+        &__article{
+            padding-bottom: 35px;
+        }
+    
+        &__paragraph{
+            font-size: $txt-small;
+            font-weight: 400;
+            font-family: $text-font;
+            text-align: justify;
+            margin-bottom: $paragraph-margin;
+            
+        }
+    
+    
+    }//end reviews
+    
+
+    .videos{
+        margin-block-start: 20px;
+     
+        &__list{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            gap:50px;
+           
+        }
+
+     
+    
+    }//------ end videos
+
+
+
+
+
+
+    //-------------------------------------------media queries
+    @media(width < $phone){
+
+        &{
+            width:80%;
+        }
+
+        &__info{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        img{
+            width:50%;
+        }
+
+        .videos__list iframe{
+            width:315px;
+            height:185;
+
+        }
+
+
+       
+    }//-------------------------
+
+    
+        @media( width > $phone) and (width <=$tablet){
+            &{
+                width:75%;
+            }
+
+            &__info{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+            }
+          
+        }
+        
+        @media(width > $tablet) and (width <= $laptop) {
+            .content{
+                width:70%;
+            }
+          
+        }
+
+        @media(width > $laptop) and (width < $desktop){
+            &{
+                width:60%;
+            }
+        }
+
+        @media(width > $desktop){
+            &{
+                width:50%;
+                
+            }
+       
+        }
+       
+}//end content
+
+
+
+
+
+
+
+
+
+
+
+

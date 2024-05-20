@@ -1,0 +1,7 @@
+node_modules
+
+# Ignorar la carpeta dist de desarrollo
+dist/
+
+# Ignorar el archivo package-lock.json
+package-lock.json

@@ -1,0 +1,124 @@
+@import "index.scss";
+   
+
+.content{
+    width:$content-width;
+    margin-left: $paragraph-margin;
+    margin:25px auto;
+    background-color: $title-color;
+    min-height: 100vh;
+   
+    
+   
+   &__titles{
+    border-bottom: 1px solid $dark-grey;
+    font-size: $txt-regular;
+    font-family: $menu-font;
+    margin-block-end: 30px;
+    
+}
+
+
+
+.event{
+    width:100%;
+    display:flex;
+    margin:0 auto;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $medium-grey;
+    margin-block-end: 50px;
+
+    &__info{
+        font-family: $text-font;
+        margin-block-end: 20px;
+      
+        & p:first-child{
+            font-weight: 800;
+            font-family: $menu-font;
+        }
+
+        
+    }
+
+    &__button{
+        font-family: $text-font;
+        font-size: $txt-small;
+        padding:10px 30px;
+        background-color:$magenta;
+        color: white;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+        box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
+       }
+    
+    }
+
+   
+
+
+
+
+    //-------------------------------------------media queries
+    @media(width < $phone){
+
+        // &{
+        //     width:80%;
+        // }
+
+        &__info{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+
+        .videos__list iframe{
+            width:315px;
+            height:185;
+
+        }
+
+
+       
+    }
+
+    
+    @media( width > $phone) and (width <=$tablet){
+            // &{
+            //     width:75%;
+            // }
+
+           
+          
+    }
+        
+    @media(width > $tablet) and (width <= $laptop) {
+            // &{
+            //     width:70%;
+            // }
+          
+    }
+
+    @media(width > $laptop) and (width < $desktop){
+            // &{
+            //     width:60%;
+            // }
+    }
+
+    @media(width > $desktop){
+            // &{
+            //     width:50%;
+                
+            // }
+       
+    }
+
+}//end content
+   
+
+
+
