@@ -9,27 +9,6 @@
 </head>
 <body>
 
-    <!-- <header class="topnav">
-        <h1><a href="./main.html">Kings of Leon</a></h1>
-        <div class="topnav__open">
-            <div class="hamburguer-ct">
-                <div class="hamburguer-ct-stripe"></div>
-                <div class="hamburguer-ct-stripe"></div>
-                <div class="hamburguer-ct-stripe"></div>
-            </div>
-        </div>
-
-        <div class="topnav__menu">
-            <nav>
-                <ul class="topnav__links">
-                    <li class="topnav__item"><a href="./music.html" class="topnav__links ">Music</a></li>
-                    <li class="topnav__item"><a href="#" class="topnav__links">News</a></li>
-                    <li class="topnav__item"><a href="#" class="topnav__links">Shows</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header> -->
-
     <header>
         <include src="./topnav.html"></include>
    </header>
@@ -52,7 +31,16 @@
         
         <div class="content__info">
 
-            <img src="./assets/albums/because-of-the-times.jpg" alt="">
+            <img 
+                srcset="
+                    assets/albums/1-050.png 700w,
+                    assets/albums/1-0.75.png 1050w,
+                    assets/albums/1.png 1400w
+                   " 
+                sizes="(max-width: 800px)50vw, 25vw"
+                src="./assets/albums/1-050.png"
+                alt="">
+
             <div class="content__songs">
                 <ul>
                     <li>1. Knocked Up<span><a href="#knocked-up"><img src="./assets/icons/youtube-color.png" alt=""></a></span></li>

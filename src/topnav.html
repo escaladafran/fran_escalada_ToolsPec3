@@ -1,15 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles/topnav.scss">
-</head>
-<body>
 
-    <header class="topnav">
-        <h1><a href="./index.html">Kings of Leon</a></h1>
+    <link rel="stylesheet" href="./styles/topnav.scss">
+    <div class="topnav">
+       <a href="./main.html">
+        <picture>
+                <source 
+                        type="image/svg+xml" 
+                        srcset="assets/svg/Logo_090.svg">
+                <img 
+                    class="topnav__logo"
+                    srcset="
+                        assets/logos/Logo-500.png 500w
+                        assets/logos/Logo-625.png 6250w
+                        assets/logos/Logo-1000.png 1000w
+                        assets/logos/Logo-1225.png 1225w
+                        " 
+                    sizes="(max-width: 800px)95vw, 25vw"
+                    src="./assets/logos/Logo-500.png"
+                    alt="">
+            </picture>
+         </a>
+
+
         <div class="topnav__open">
             <div class="hamburguer-ct">
                 <div class="hamburguer-ct-stripe"></div>
@@ -20,10 +31,9 @@
 
         <div class="topnav__menu">
            
-            <nav>
-                
+            <nav>      
                 <ul class="topnav__links">
-                    <li id ="first-child">Kings of leon</li>
+                    <li class="topnav__item" id="first-child"><a href="./music.html" class="topnav__links "></a></li>
                     <li class="topnav__item"><a href="./music.html" class="topnav__links ">Music</a></li>
                     <li class="topnav__item"><a href="./about.html" class="topnav__links">Bio</a></li>
                     <li class="topnav__item"><a href="./tour.html" class="topnav__links">Tour</a></li>
@@ -38,13 +48,7 @@
                 <li class="social__icons"><a href="https://soundcloud.com/kingsofleon"><img src="./assets/icons/soundcloud-wh.png" alt=""></a></li>
                 <li class="social__icons"><a href="https://www.deezer.com/es/artist/385"><img src="./assets/icons/deezer-wh.png" alt=""></a></li>
             </ul>
-
-
         </div>
-    </header>
+ 
 
     <script src="./scripts/app.js"></script>
-    
-
-</body>
-</html>

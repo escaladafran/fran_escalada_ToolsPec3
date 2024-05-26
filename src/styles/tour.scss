@@ -3,10 +3,11 @@
 
 .content{
     width:$content-width;
-    margin-left: $paragraph-margin;
+   // margin-left: $paragraph-margin;
     margin:25px auto;
     background-color: $title-color;
     min-height: 100vh;
+   
    
     
    
@@ -45,16 +46,45 @@
         font-family: $text-font;
         font-size: $txt-small;
         padding:10px 30px;
-        background-color:$magenta;
+        position:relative;
+        
+       
+        background: linear-gradient(
+            90deg,
+            #e21d5a 0%,
+            #ff3300 40%,
+            #ffa800 65%,
+            #e21d5a 100%
+        
+        );
+        
+        background-size: 300% 300%;
         color: white;
-        border-radius: 10px;
-        border: none;
+         border-radius: 10px;
+         border: none;
         cursor: pointer;
-        transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
-        box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
+         box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
+         transition: 0.4s all ease-in;
+    
+       &:hover{
+        transition: 0.4s all ease-in;
+        background-position: 100% 100%;
        }
     
     }
+    
+
+
+      
+
+ 
+
+
+
+
+
+    }
+
 
    
 
@@ -64,9 +94,7 @@
     //-------------------------------------------media queries
     @media(width < $phone){
 
-        // &{
-        //     width:80%;
-        // }
+      
 
         &__info{
             flex-direction: column;
@@ -76,44 +104,39 @@
         }
 
 
-        .videos__list iframe{
-            width:315px;
-            height:185;
-
-        }
-
+        
 
        
     }
 
     
     @media( width > $phone) and (width <=$tablet){
-            // &{
-            //     width:75%;
-            // }
+             &{
+                 width:75%;
+             }
 
            
           
     }
         
     @media(width > $tablet) and (width <= $laptop) {
-            // &{
-            //     width:70%;
-            // }
+             &{
+                 width:70%;
+             }
           
     }
 
     @media(width > $laptop) and (width < $desktop){
-            // &{
-            //     width:60%;
-            // }
+             &{
+                 width:60%;
+            }
     }
 
     @media(width > $desktop){
-            // &{
-            //     width:50%;
+             &{
+                width:50%;
                 
-            // }
+             }
        
     }
 

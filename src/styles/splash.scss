@@ -1,0 +1,143 @@
+@import 'index.scss';
+
+
+.splash{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  gap:20px;
+  position:fixed;
+  top:0;
+  left:0;
+  height:100vh;
+  width:100%;
+  background:rgb(255, 255, 255);
+  z-index:20;
+  color:white;
+  text-align: center;
+  line-height:90vh;
+
+
+
+@keyframes fadeIn{
+  to{
+    opacity:1
+  }
+}
+
+&__fade{
+  position:relative;
+  top:50%;
+  font-size:3em;
+  opacity:0;
+  animation:fadeIn 2.5s forwards;
+}
+
+
+&__logo {
+  margin-block-start: 80px;
+
+  path {
+
+    stroke-width: 0;
+    stroke-dasharray: 500;
+    animation-name: letter-animation;
+    animation-duration:6s;
+    animation-timing-function: linear;
+    animation-direction: forwards;
+    fill:$dark-grey;
+  
+    
+  }
+
+}
+
+
+
+
+
+&__title{
+  color:black;
+  font-family:$menu-font;
+  font-size:$txt-big;
+  opacity:0;
+  animation: titleShowsUp 1.5s linear 6.2s forwards;
+
+}
+
+}//end splash
+
+
+.splash.hide{
+  position:relative;
+  top:0;
+  left:0;
+  height:100vh;
+  width:100%;
+  background:$title-color;
+  z-index:-1;
+  color:white;
+  text-align: center;
+  line-height:90vh;
+  transition: all 2s;
+  display:none
+
+}
+
+@keyframes letter-animation {
+
+  0% {
+    stroke: lightgray;
+    stroke-dashoffset: 500;
+    stroke-width: 0.4;
+    fill-opacity: 0;
+    //fill: #ffffff;
+  }
+  25% {
+    stroke: lightgray;
+    stroke-dashoffset: 475;
+    fill-opacity: 0;
+   
+  }
+  50% {
+    stroke: lightgray;
+    stroke-dashoffset: 450;
+    fill-opacity: 0;
+    
+  }
+  75% {
+    stroke: lightgray;
+    fill-opacity: .2;
+  }
+  100% {
+    stroke-dashoffset: 500;
+    fill-opacity:1;
+    stroke-width: 0;
+    stroke-dashoffset: 400;
+    stroke: lightgray;
+  }
+}
+
+@keyframes titleShowsUp {
+  0%{
+        opacity:0;
+       
+      }
+    
+      100%{
+       
+        opacity:1;
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="84.971481mm"
+   height="81.930527mm"
+   viewBox="0 0 84.971481 81.930527"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     transform="translate(-63.382364,-102.59687)">
+    <g
+       id="g1"
+       transform="matrix(1.4455948,0,0,1.4455948,-41.419576,-143.81003)">
+      <path
+         style="font-weight:bold;font-size:46.4624px;font-family:'Cascadia Code';-inkscape-font-specification:'Cascadia Code Bold';stroke-width:0.483982"
+         d="m 104.95996,249.63948 q -12.273513,0 -12.273513,-16.33444 0,-16.78817 12.273513,-16.78817 12.27352,0 12.27352,16.78817 0,16.33444 -12.27352,16.33444 z m 0,-5.71705 q 5.9893,0 5.9893,-10.61739 0,-11.0938 -5.9893,-11.0938 -5.989292,0 -5.989292,11.0938 0,10.61739 5.989292,10.61739 z"
+         id="text1-1-8-6"
+         transform="scale(1.1038014,0.90596007)"
+         aria-label="O" />
+      <path
+         style="font-weight:bold;font-size:48.1147px;font-family:'Cascadia Code';-inkscape-font-specification:'Cascadia Code Bold';stroke-width:0.501194"
+         d="m 68.96101,211.49991 0.422884,-6.22578 q 3.336077,0 5.755909,-1.38612 2.443324,-1.38611 4.017389,-3.73547 1.597559,-2.34935 2.349351,-5.28603 0.775285,-2.96019 0.775285,-6.10832 h 6.29626 q 0,4.44028 -1.315636,8.52815 -1.315637,4.08787 -3.852935,7.30648 -2.513805,3.19511 -6.155299,5.0511 -3.641493,1.85599 -8.293208,1.85599 z m -3.359571,10.61906 v -33.36078 h 6.202286 v 33.36078 z m 16.915324,0 -6.695649,-14.77741 5.779403,-2.39634 8.575129,17.17375 z"
+         id="text1-1-8-7-1"
+         transform="scale(1.1057368,0.90437435)"
+         aria-label="K" />
+      <path
+         style="font-weight:bold;font-size:44.2367px;font-family:'Cascadia Code';-inkscape-font-specification:'Cascadia Code Bold';stroke-width:0.460799"
+         d="m 179.8795,-81.955482 v -30.671928 h 5.70239 v 30.671928 z m 0,0 v -5.248788 h 21.03835 v 5.248788 z"
+         id="text1-4-8-0-5"
+         transform="matrix(0,1.1304602,-0.8845955,0,0,0)"
+         aria-label="L" />
+      <path
+         style="font-weight:bold;font-size:48.1147px;font-family:'Cascadia Code';-inkscape-font-specification:'Cascadia Code Bold';stroke-width:0.501194"
+         d="m 154.1539,-111.7971 v -33.36077 h 6.20228 v 33.36077 z m 0,0 v -5.70892 h 22.88267 v 5.70892 z m 0,-13.83767 v -5.73242 h 18.65384 v 5.73242 z m 0,-13.81418 v -5.70892 h 22.88267 v 5.70892 z"
+         id="text1-4-8-2-5-9"
+         transform="matrix(0,1.1057368,-0.90437435,0,0,0)"
+         aria-label="E" />
+    </g>
+  </g>
+</svg>

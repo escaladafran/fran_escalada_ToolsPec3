@@ -6,7 +6,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 //VARIABLES
-$title-font:"Ultra", serif;
 $menu-font:"Oswald", sans-serif;
 $text-font: "Open Sans", sans-serif;
 
@@ -18,6 +17,7 @@ $back-color: #75A39F;
 $light-grey:#F5EFE5;
 $dark-grey:#323232;
 $medium-grey:#D3D3D3;
+$light-text:#6C6C6C;
 
 
 $green:#85CE73;
@@ -33,10 +33,17 @@ $content-width:80%;
 $paragraph-margin:10px;
 
 //BREAKPOINTS
-$phone:40em;
-$tablet:48em;
-$laptop:64em;
-$desktop:80em;
+$phone:576px;
+$tablet:768px;
+$laptop:992px;
+$desktop:1200px;
+
+
+
+
+
+
+
 
 //VARIABLES TAMAÑO textos
 $txt-huge:3rem;
@@ -59,20 +66,14 @@ $txt-small:1rem;
    
 }
 
-
+body{
+  background-color: white;
+}
 
 a{
   text-decoration: none;
 }
 
 
-//COLORES DE FONDO
-.home{
-  background-color: $back-color;
-}
-
-.music{
-  background-color: $light-grey;
-}
 
 

@@ -1,0 +1,11 @@
+Recursos básicos
+Las lecturas que os llevarán a alcanzar los objetivos de aprendizaje de este módulo son las siguientes:
+
+Introducción a las imágenes responsive: https://cloudfour.com/thinks/responsive-images-101-definitions/Links to an external site. (el artículo enlazado es la primera parte de una serie muy interesante de 10 artículos sobre imágenes responsive).
+Y, también, sobre el mismo tema: https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_imagesLinks to an external site.
+El apartado Images de Web Fundamentals de Google Developers: https://developers.google.com/web/fundamentals/design-and-ux/responsive/imagesLinks to an external site.
+La documentación completa sobre SVG en MDN: https://developer.mozilla.org/en-US/docs/Web/SVGLinks to an external site.
+Introducción a clip-path y los conceptos de clipping y masking: https://css-tricks.com/clipping-masking-css/Links to an external site.
+Explicación bastante completa sobre optimización de imágenes en la web: https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimizationLinks to an external site.
+Introducción a la animación basada en CSS: https://thoughtbot.com/blog/css-animation-for-beginnersLinks to an external site.
+CSS Transitions explained: https://zellwk.com/blog/css-transitions/Links to an external site.
