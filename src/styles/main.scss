@@ -54,7 +54,6 @@ body{
     }
     
     
-    
     &__child{
       &:first-child{
         grid-area: one;
@@ -77,7 +76,6 @@ body{
         grid-area: four;
         clip-path: polygon(0% -0.85%, 160% 9.98%, 121.32% 65.63%, 99.66% 95%, 0% 98%);
     
-    
       }
       &:nth-child(5){
         grid-area: five;
@@ -90,9 +88,6 @@ body{
      
     }
     
-
-
-
 
     &__social{
       display:flex;

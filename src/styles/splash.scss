@@ -89,20 +89,20 @@
 
   0% {
     stroke: lightgray;
-    stroke-dashoffset: 500;
+    stroke-dashoffset: 1500;
     stroke-width: 0.4;
     fill-opacity: 0;
     //fill: #ffffff;
   }
   25% {
     stroke: lightgray;
-    stroke-dashoffset: 475;
+    stroke-dashoffset: 1475;
     fill-opacity: 0;
    
   }
   50% {
     stroke: lightgray;
-    stroke-dashoffset: 450;
+    stroke-dashoffset: 1450;
     fill-opacity: 0;
     
   }
@@ -111,10 +111,10 @@
     fill-opacity: .2;
   }
   100% {
-    stroke-dashoffset: 500;
+    stroke-dashoffset: 1500;
     fill-opacity:1;
     stroke-width: 0;
-    stroke-dashoffset: 400;
+    stroke-dashoffset: 1400;
     stroke: lightgray;
   }
 }
