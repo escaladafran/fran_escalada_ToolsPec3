@@ -3,20 +3,48 @@
  
  //footer
  .footer{
-   
+  
     width: 100%;
     background-color: $dark-grey;
-    height:95px;
+    height:fit-content;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: auto;
    
+  
 
+    &__navigation{
+    
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $menu-font;
+        gap:20px;
+    
+       
+        
+        a{
+           
+            color:white;
+            cursor:pointer;
+            font-size:$txt-big;
+            &:hover{
+                opacity:.5;
+                transition:opacity .3s ease;
+            }
+           
+        }
+    }
 
-
-
+    &__social{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        
+    }
 
     &__icons{
         padding-top:15px;
@@ -24,16 +52,28 @@
         justify-content: center;
         align-items: center;
         gap:15px;
-        margin-block-end: 10px;;
+        width:100%;
        
-    
+
+       // background-color: rgb(85, 80, 79);
     
        img{
-            width:32px ;
+            width:24px ;
         }
+    
+        img:hover{
+            opacity:.5;
+            transition:opacity .3s ease;
+           
+        }
+    
+    
+    
     }
 
     &__copyright{
+       
+        margin-block-start: 10px;
         color:white;
         font-family: $text-font;
         padding-bottom: 5px;

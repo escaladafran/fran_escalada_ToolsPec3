@@ -147,6 +147,26 @@
 
 
 
+    &__title{
+        display: block;
+        text-align: center;
+        font-family: $menu-font;
+        font-size:$txt-huge;
+        margin-block-end: 20px;
+        font-weight: 300;
+        font-stretch: extra-expanded;
+        letter-spacing: 0.25em;
+
+        &::first-letter{
+            color:red;
+        }
+    }
+
+
+
+
+
+
 
 
 }//end topnav--------------------------------------------------
