@@ -29,3 +29,21 @@ De acuerdo con las observaciones de la práctiuca anterior se han hecho las sigu
 - [La documentación de la pestaña Network de las herramientas de desarrollo de Firefox Developer Edition:](https://firefox-source-docs.mozilla.org/devtools-user/network_monitor/index.htmlLinks)
 
 - [La documentación sobre las Core Web Vitals en web.dev](https://web.dev/learn-core-web-vitals/)
+
+
+
+### Recomendaciones de PageSpeed Insights
+
+ - Aplicar el conversor de imagenes de integrado en parcel parcel para reducir el tamaño de las imagenes 
+ - Eliminar las fuentes no utilizadas en el proyecto
+
+ 
+ ```html
+
+ //FUENTES
+// (** Eliminadas!!) @import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+// (** Eliminadas!!) @import url('https://fonts.googleapis.com/css2?family=Orelega+One&family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+```
