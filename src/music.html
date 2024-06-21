@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kings of Leon - Music</title>
     <link rel="stylesheet" href="./styles/music.scss">
-    
+    <script async src="./scripts/music.js"></script> 
  
 </head>
 <body>
@@ -15,53 +15,47 @@
         <include src="./topnav.html"></include>
    </header>
  
-
-
-
     <main class="content">
        <section class="content__grid">
+            <div class="content__card">   
+                    <a href="./album1.html">
+                    <img 
+                     
+                        class="content__img"  
+                        srcset="
+                            assets/albums/1-050.webp 700w,
+                            assets/albums/1-0.75.webp 1050w,
+                            assets/albums/1.webp 1400w
+                        " 
+                        src="./assets/albums/1-050.png"
+                        alt=""></a>
 
-        <div class="content__card">   
-                <a href="./album1.html">
-                <img 
-                    class="content__img"  
-                    srcset="
-                        assets/albums/1-050.webp 700w,
-                        assets/albums/1-0.75.webp 1050w,
-                        assets/albums/1.webp 1400w
-                    " 
-                    src="./assets/albums/1-050.png"
-                    alt=""></a>
-
-                <p class="content__caption">Because of the Times</p>
-                <p class="content__year">2007</p>
-        </div>
-
-
-
-
-
-           
+                    <p class="content__caption">Because of the Times</p>
+                    <p class="content__year">2007</p>
+            </div>
+  
             <div class="content__card">
                 <a href="./album2.html">
                 <img 
-                class="content__img"  
-              
-                srcset="
-                    assets/albums/2-050.webp 700w,
-                    assets/albums/2-075.webp 1050w,
-                    assets/albums/2.webp 1400w
-                " 
-                src="./assets/albums/2-050.webp"
-                alt=""></a>
+                    
+                    class="content__img"  
+                   
+                    srcset="
+                        assets/albums/2-050.webp 700w,
+                        assets/albums/2-075.webp 1050w,
+                        assets/albums/2.webp 1400w
+                    " 
+                    src="./assets/albums/2-050.webp"
+                    alt=""></a>
               <p class="content__caption">When you see yourself</p> 
               <p class="content__year">2013</p>
             </div>
 
             <div class="content__card">
                     <img 
-                        class="content__img"  
                         
+                        class="content__img"  
+                       
                         srcset="
                             assets/albums/3-050.webp 700w,
                             assets/albums/3-075.webp 1050w,
@@ -76,8 +70,8 @@
 
             <div class="content__card">
                 <img 
+                   
                     class="content__img"  
-                  
                     srcset="
                         assets/albums/4-05.webp 700w,
                         assets/albums/4-075.webp 1050w,
@@ -92,8 +86,9 @@
 
             <div class="content__card">
                 <img 
-                    class="content__img"  
-                   
+                
+                   loading="lazy"
+                    class="content__img"           
                     srcset="
                         assets/albums/5-05.webp 700w,
                         assets/albums/5-075.webp 1050w,
@@ -106,11 +101,10 @@
             </div>
 
            
-
             <div class="content__card">
                 <img 
+                    loading="lazy"
                     class="content__img"  
-                    
                     srcset="
                         assets/albums/6-05.webp 700w,
                         assets//albums/6-075.webp 1050w,
@@ -121,13 +115,11 @@
                 <p class="content__caption">Mechanical bull</p>
                 <p class="content__year">2016</p>
             </div>
-      
-          
-
+            
             <div class="content__card">
                 <img 
+                    loading="lazy"
                     class="content__img"  
-                   
                     srcset="
                         assets/albums/7-05.webp 700w,
                         assets/albums/7-075.webp 1050w,
@@ -157,7 +149,7 @@
             <div class="content__card">
                 <img 
                     class="content__img"  
-                   
+                   loading="lazy"
                     srcset="
                         assets/albums/9-05.webp 700w,
                         assets/albums/9-075.webp 1050w,
@@ -172,7 +164,7 @@
             <div class="content__card">
                 <img 
                     class="content__img"  
-                  
+                  loading="lazy"
                     srcset="
                         assets/albums/10-05.webp 700w,
                         assets/albums/10-075.webp 1050w,
@@ -187,7 +179,7 @@
             <div class="content__card">
                 <img 
                     class="content__img"  
-              
+                    loading="lazy"
                     srcset="
                         assets/albums/11-05.webp 700w,
                         assets/albums/11-075.webp 1050w,
@@ -202,7 +194,7 @@
             <div class="content__card">
                 <img 
                     class="content__img"  
-                   
+                     loading="lazy"
                     srcset="
                         assets/albums/12-05.webp 700w,
                         assets/albums/12-075.webp 1050w,
@@ -223,7 +215,7 @@
         <include src="./footer.html"></include>
     </footer>
 
-    <!-- <script src="./scripts/app.js"></script> -->
-    <script src="./scripts/music.js"></script>
+ 
+    
 </body>
 </html>
