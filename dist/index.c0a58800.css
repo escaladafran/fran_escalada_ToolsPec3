@@ -1,0 +1,193 @@
+@import "https://fonts.googleapis.com/css2?family=Ultra&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Orelega+One&family=Tilt+Warp&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap";
+*, :before, :after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  list-style: none;
+}
+
+body {
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.topnav {
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 5px auto 0;
+  padding-block: 1.5rem;
+  display: flex;
+}
+
+@media (width >= 768px) {
+  .topnav {
+    justify-content: center;
+    gap: 50px;
+  }
+}
+
+@media (width < 768px) {
+  .topnav {
+    justify-content: space-around;
+  }
+}
+
+.topnav__open {
+  z-index: 20;
+}
+
+@media (width > 768px) {
+  .topnav__open {
+    display: none;
+  }
+}
+
+.topnav__menu {
+  font-family: Oswald, sans-serif;
+  text-decoration: none;
+}
+
+@media (width < 768px) {
+  .topnav__menu {
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+    background-color: #323232;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    transition: all .5s;
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: -100%;
+  }
+
+  .topnav__menu #first-child {
+    margin-top: 300px;
+  }
+}
+
+.topnav__links {
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+@media (width > 992px) {
+  .topnav__links {
+    font-size: 2.25rem;
+  }
+}
+
+@media (width >= 768px) {
+  .topnav__links {
+    color: #323232;
+    display: flex;
+  }
+}
+
+@media (width < 768px) {
+  .topnav__links {
+    color: #fff;
+    font-size: 4.5rem;
+  }
+}
+
+.topnav__item {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.topnav__item:hover {
+  opacity: .5;
+  transition: opacity .3s;
+}
+
+.topnav_menu, .topnav__active {
+  right: 0;
+}
+
+.topnav__actual {
+  text-decoration: underline;
+}
+
+.topnav .social {
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  height: 100%;
+  display: flex;
+}
+
+.topnav .social img {
+  width: 32px;
+}
+
+.topnav .social a:hover {
+  opacity: .5;
+  transition: opacity .3s;
+}
+
+@media (width > 768px) {
+  .topnav .social {
+    display: none;
+  }
+}
+
+.topnav__title {
+  text-align: center;
+  letter-spacing: .25em;
+  margin-block-end: 20px;
+  font-family: Oswald, sans-serif;
+  font-size: 3rem;
+  font-weight: 300;
+  font-stretch: extra-expanded;
+  display: block;
+}
+
+.topnav__title:first-letter {
+  color: red;
+}
+
+.hamburguer-ct {
+  cursor: pointer;
+  z-index: 2;
+  width: 100px;
+  height: fit-content;
+  padding: 10px;
+  transition: all .2s ease-out;
+}
+
+.hamburguer-ct .hamburguer-ct-stripe {
+  backface-visibility: hidden;
+  background: #323232;
+  width: 100%;
+  height: 10px;
+  margin: 8px auto;
+  transition: all .3s;
+}
+
+.hamburguer-ct.on div:first-child {
+  background: #fff;
+  transform: rotate(45deg)translate(18px, 18px);
+}
+
+.hamburguer-ct.on div:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburguer-ct.on div:nth-child(3) {
+  background: #fff;
+  transform: rotate(-45deg)translate(8px, -8px);
+}
+/*# sourceMappingURL=index.c0a58800.css.map */

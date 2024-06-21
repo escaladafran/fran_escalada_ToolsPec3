@@ -1,0 +1,133 @@
+@import "https://fonts.googleapis.com/css2?family=Ultra&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Orelega+One&family=Tilt+Warp&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap";
+*, :before, :after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  list-style: none;
+}
+
+body {
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.splash {
+  z-index: 20;
+  color: #fff;
+  text-align: center;
+  background: #fff;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  height: 100vh;
+  line-height: 90vh;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.splash__fade {
+  opacity: 0;
+  font-size: 3em;
+  animation: 2.5s forwards fadeIn;
+  position: relative;
+  top: 50%;
+}
+
+.splash__logo {
+  margin-block-start: 80px;
+}
+
+.splash__logo path {
+  stroke-width: 0;
+  stroke-dasharray: 500;
+  animation-name: letter-animation;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  animation-direction: forwards;
+  fill: #323232;
+}
+
+.splash__title {
+  color: #000;
+  opacity: 0;
+  font-family: Oswald, sans-serif;
+  font-size: 2.25rem;
+  animation: 1.5s linear 6.2s forwards titleShowsUp;
+}
+
+.splash.hide {
+  z-index: -100;
+  color: #fff;
+  text-align: center;
+  background: #fff;
+  width: 100%;
+  height: 100vh;
+  line-height: 90vh;
+  transition: all 2s;
+  display: none;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+@keyframes letter-animation {
+  0% {
+    stroke: #d3d3d3;
+    stroke-dashoffset: 1500px;
+    stroke-width: .4px;
+    fill-opacity: 0;
+  }
+
+  25% {
+    stroke: #d3d3d3;
+    stroke-dashoffset: 1475px;
+    fill-opacity: 0;
+  }
+
+  50% {
+    stroke: #d3d3d3;
+    stroke-dashoffset: 1450px;
+    fill-opacity: 0;
+  }
+
+  75% {
+    stroke: #d3d3d3;
+    fill-opacity: .2;
+  }
+
+  100% {
+    stroke-dashoffset: 1500px;
+    fill-opacity: 1;
+    stroke-width: 0;
+    stroke-dashoffset: 1400px;
+    stroke: #d3d3d3;
+  }
+}
+
+@keyframes titleShowsUp {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=index.9ec19b2c.css.map */
