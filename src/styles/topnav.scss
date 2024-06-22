@@ -52,7 +52,7 @@
             color:$title-color;
             z-index:1;
              #first-child{
-                margin-top: 300px;
+                margin-top: 100px;
              }
             
         }
@@ -157,9 +157,26 @@
         font-stretch: extra-expanded;
         letter-spacing: 0.25em;
 
-        &::first-letter{
-            color:red;
+        // &::first-letter{
+        //     color:red;
+        // }
+    
+       &::after{
+        content: "";
+        display: block;
+        width: 100px;
+        background-color:$dark-grey;
+        height: 2px;
+        margin:20px auto;
+       }
+        @media (width <  $tablet){    
+           
+            font-size: $txt-medium;
+          
+           
         }
+    
+    
     }
 
 
@@ -183,6 +200,18 @@
   transition: all .2s ease-out;
   z-index:2;
   padding:10px;
+ 
+}
+
+
+
+.on{
+    position:absolute;
+    top:5%;
+    left:70%;
+    position:fixed;
+    overflow: hidden;
+   
 }
 
 .hamburguer-ct 
