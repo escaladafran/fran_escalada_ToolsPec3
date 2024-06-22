@@ -105,7 +105,8 @@ body{
         &:hover{
         opacity:30%;
         transition:opacity .3s ease;
-       
+        width:25px;
+        height:auto;
       }  
    
     }
@@ -113,6 +114,7 @@ body{
     .img__icon{
       width:25px;
       height:auto;
+    
       
      }
 }

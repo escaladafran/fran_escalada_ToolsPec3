@@ -20,7 +20,7 @@ a {
   font-family: Open Sans, sans-serif;
 }
 
-.content__titles:not(#first-title) {
+.content__titlesalbum:not(#first-title) {
   border-bottom: 1px solid #323232;
   font-family: Oswald, sans-serif;
   font-size: 1.3rem;
@@ -34,6 +34,7 @@ a {
 .content__album {
   border-bottom: 1px solid #323232;
   justify-content: space-between;
+  gap: 30px;
   display: flex;
 }
 
@@ -65,7 +66,6 @@ a {
 }
 
 .content__songs img {
-  width: 25px;
   margin: 0 auto;
 }
 
@@ -203,10 +203,6 @@ a {
   align-items: center;
   gap: 15px;
   display: flex;
-}
-
-.content .reviews__header img {
-  width: 40px;
 }
 
 .content .reviews__article {

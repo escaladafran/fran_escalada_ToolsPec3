@@ -147,7 +147,7 @@
 
 
 
-    &__title{
+    &__titletop{
         display: block;
         text-align: center;
         font-family: $menu-font;
@@ -161,6 +161,7 @@
         //     color:red;
         // }
     
+        
        &::after{
         content: "";
         display: block;

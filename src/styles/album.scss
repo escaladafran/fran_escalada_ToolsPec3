@@ -13,7 +13,7 @@
    
 
 
-    &__titles:not(#first-title){
+    &__titlesalbum:not(#first-title){
         border-bottom: 1px solid $dark-grey;
         font-size: $txt-regular;
         font-family: $menu-font;
@@ -28,6 +28,7 @@
         display:flex;
         justify-content: space-between;
         border-bottom: 1px solid $dark-grey;
+        gap:30px;
 
         .album-nav{
             display: flex;
@@ -70,7 +71,7 @@
     }
 
             img{
-                width:25px;
+               
                 margin:0 auto;
                
             }
@@ -207,9 +208,7 @@
             align-items: center;
             gap:15px;
     
-            img{
-                width:40px;
-            }
+           
         }
     
         &__article{

@@ -42,27 +42,27 @@
         <div class="content__info">
 
             <img 
-                srcset="
-                    assets/albums/2-050.png 700w,
-                    assets/albums/2-075.png 1050w,
-                    assets/albums/2.png 1400w
-                   " 
+            srcset="
+                assets/albums/2-050.webp 700w,
+                assets/albums/2-075.webp 1050w,
+                assets/albums/2.webp 1400w
+            " 
                 sizes="(max-width: 800px)50vw, 25vw"
                 src="./assets/albums/2-050.png"
                 alt="">
             <div class="content__songs">
                 <ul>
-                    <li>1. Supersoaker<span><a href="#supersoaker"><img src="./assets/icons/youtube-color.png" alt=""></a></span></li>
+                    <li>1. Supersoaker<span><a href="#supersoaker"><img src="./assets/icons/youtube-color.png" width="25px" height="auto" alt=""></a></span></li>
                     <li>2. Rock City</li>
                     <li>3. Don't Matter
                     <li>4. Beautiful War</li>
-                    <li>5. Temple<span><a href="#temple"><img src="./assets/icons/youtube-color.png" alt=""></a></span></li>
-                    <li>6. Wait for Me<span><a href="#wait"><img src="./assets/icons/youtube-color.png" alt=""></a></span></li>
+                    <li>5. Temple<span><a href="#temple"><img src="./assets/icons/youtube-color.png" width="25px" height="auto" alt=""></a></span></li>
+                    <li>6. Wait for Me<span><a href="#wait"><img src="./assets/icons/youtube-color.png" width="25px" height="auto" alt=""></a></span></li>
                     <li>7. Family Tree</li>
                     <li>8. Tonight</li>
                     <li>9. Coming Back Again
                     <li>10. Coming Back Again</li>
-                    <li>11. On the Chin<span><a href="#chin"><img src="./assets/icons/youtube-color.png" alt=""></a></span></li>
+                    <li>11. On the Chin<span><a href="#chin"><img src="./assets/icons/youtube-color.png" width="25px" height="auto" alt=""></a></span></li>
                     <li>12. Work On Me</li>
                     <li>13.Last Mile Home
 
@@ -92,7 +92,15 @@
 
         <div class="reviews__content">
             <div class="reviews__header">
-                <img src="./assets/clash.jpg" alt="">
+                <picture>
+                    <source 
+                        srcset="./assets/clash.jpg?as=avif"      
+                        type="image/avif">
+                    <source 
+                        srcset="./assets/clash.jpg?as=webp"          
+                        type="image/webp">
+                    <img src="./assets/clash.jpg" width="40px" height="auto" alt="">
+                </picture>
                 <h4>Clash</h4>
             </div>
 
@@ -127,7 +135,15 @@
 
         <div class="reviews__content">
             <div class="reviews__header">
-                <img src="./assets/rollingstone.png" alt="">
+                <picture>
+                    <source 
+                        srcset="./assets/rollingstone.png?as=avif"      
+                        type="image/avif">
+                    <source 
+                        srcset="./assets/rollingstone.png?as=webp"          
+                        type="image/webp">
+                    <img src="./assets/rollingstone.png" width="40px" height="auto" alt="">
+                </picture>
                 <h4>Rolling Stone</h4>
             </div>
 
@@ -162,7 +178,15 @@
 
         <div class="reviews__content">
             <div class="reviews__header">
-                <img src="./assets/mojo.jpg" alt="">
+                <picture>
+                    <source 
+                        srcset="./assets/mojo.jpg?as=avif"      
+                        type="image/avif">
+                    <source 
+                        srcset="./assets/mojo.jpg?as=webp"          
+                        type="image/webp">
+                    <img src="./assets/mojo.jpg" width="40px" height="auto"  alt="">
+                </picture>
                 <h4>Pitchfork</h4>
             </div>
 

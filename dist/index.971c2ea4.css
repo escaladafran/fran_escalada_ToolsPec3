@@ -102,6 +102,8 @@ body {
 
 .content__social a:hover {
   opacity: .3;
+  width: 25px;
+  height: auto;
   transition: opacity .3s;
 }
 
