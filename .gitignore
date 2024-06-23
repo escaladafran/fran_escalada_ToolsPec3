@@ -5,3 +5,5 @@ node_modules
 
 # Ignorar el archivo package-lock.json
 package-lock.json
+
+.parcel-cache
